@@ -1,0 +1,11 @@
+.alert {
+    color: #af1b1b;
+}
+
+.show {
+    display: inherit;
+}
+
+.noShow {
+    display: none;
+}
