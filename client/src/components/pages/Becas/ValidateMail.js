@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { useHistory } from "react-router-dom"
 import { Button, Container, Form } from 'react-bootstrap'
+import UserContext from '../../../context/UserContext'
 import UserService from '../../../services/user.service'
 import './ValidateMail.css'
 
@@ -9,12 +10,15 @@ const userService = new UserService()
 
 export default function ValidateMail() {
 
+    let history = useHistory()
+    const { setUserApi } = useContext(UserContext)
     const [users, setUsers] = useState(undefined)
+    const [load, setLoad] = useState(true)
+
     const [mail, setMail] = useState('')
     const [error, setError] = useState(undefined)
 
 
-    let history = useHistory()
 
     const clearState = () => {
         setMail('')
@@ -23,7 +27,9 @@ export default function ValidateMail() {
     const getAllUsers = () => {
         userService
             .allUsers()
-            .then(users => setUsers(users.data))
+            .then(users => {
+                setUsers(users.data)
+            })
             .catch(() => setUsers(undefined))
     }
 
@@ -44,15 +50,17 @@ export default function ValidateMail() {
     }
 
     const findUser = () => {
-        users.find(elm => elm.email === mail ? (history.push("/becas/becas-opciones"), clearState()) : setError('El usuario NO existe'))
+        users.find(elm => elm.email === mail ? (setUserApi(elm), history.push("/becas/becas-opciones"), clearState()) : setError('El usuario NO existe'))
+    }
+
+    const buttonDisabled = () => {
+        return !(users)
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
         findUser()
     }
-
-
 
     return (
         <>
@@ -66,8 +74,7 @@ export default function ValidateMail() {
                         <Form.Control onChange={(e) => handleChange(e)} name="mail" value={mail} type="text" placeholder="E.g. manuel@gmail.com" />
                     </Form.Group>
                     {error && <p className='alert'>{error}</p>}
-
-                    <Button variant="primary" type="submit">DIME MIS BECAS</Button>
+                    <Button variant="primary" type="submit" disabled={buttonDisabled()}>DIME MIS BECAS</Button>
                     <p>RECOMIENDANOS O SIGUE NUESTRO BLOG PARA MÁS INFO</p>
                 </Form>
             </Container>

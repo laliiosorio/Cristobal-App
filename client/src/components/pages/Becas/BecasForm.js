@@ -10,7 +10,6 @@ export default function BecasForm() {
     let history = useHistory()
     const { setUser } = useContext(UserContext)
     const [birth, setBirth] = useState(undefined)
-    const [disable, setDisable] = useState(true)
     const [date, setDate] = useState({ day: '', month: '', year: '' })
     const [formData, setFormData] = useState({ nationality: '', community: '', gradesAverage: '' })
 
@@ -36,12 +35,6 @@ export default function BecasForm() {
             return setBirth(getDate(date.month, date.day, date.year))
         }
     })
-
-    // useEffect(() => {
-    //     if (date.day && formData.gradesAverage) {
-    //         return setDisable(false)
-    //     }
-    // })
 
     const buttonDisabled = () => {
         return !(date.day && formData.gradesAverage)
