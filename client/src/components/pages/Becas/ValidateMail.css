@@ -1,11 +1,32 @@
-.alert {
+.validate-box {
+    padding: 30px;
+}
+
+.validate-box label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.input-mail {
+    margin-bottom: 50px;
+}
+
+.alert-error {
+    margin-top: .6em;
+    text-align: center;
     color: #af1b1b;
 }
 
-.show {
-    display: inherit;
-}
-
-.noShow {
-    display: none;
+.bottom-info {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 2em;
+    text-align: center;
 }

@@ -1,0 +1,21 @@
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0)!important;
+}
+
+.navbar {
+    padding: 1.2rem!important;
+}
+
+.menu-nav {
+    font-size: 18px;
+}
+
+.logo {
+    width: 133px;
+    height: 32px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}

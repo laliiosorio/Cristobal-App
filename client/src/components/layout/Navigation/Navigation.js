@@ -1,20 +1,22 @@
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-// import './Navigation.css'
+import { Navbar, Nav, Container } from 'react-bootstrap'
+import Logo from './logo-cristobal.svg'
+import icon from './toggle-menu.svg'
+import './Navigation.css'
 
 
 const Navigation = () => {
 
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand='lg'>
             <Container>
-                <Navbar.Brand href="/">Cristóbal</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="/becas/encontrar-becas">
+                <Navbar.Brand href='/'><img className='logo' src={Logo} alt='logo' /></Navbar.Brand>
+                <Navbar.Toggle aria-controls='responsive-navbar-nav' >
+                    <img className='icon' src={icon} alt='icon' />
+                </Navbar.Toggle>
+                <Navbar.Collapse id='responsive-navbar-nav'>
+                    <Nav className='me-auto'>
+                        <Nav.Link eventKey={2} href='/becas/encontrar-becas' className='menu-nav'>
                             Buscar Becas
                         </Nav.Link>
                     </Nav>

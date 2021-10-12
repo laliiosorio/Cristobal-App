@@ -1,0 +1,53 @@
+.becas-form {
+    padding: 30px 30px 70px;
+}
+
+.becas-form h6 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #2F2F32;
+    margin-bottom: 40px;
+}
+
+.block-form {
+    margin-bottom: 10rem;
+}
+
+.group-info label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.date-info label {
+    margin-bottom: .2rem;
+}
+
+.group-info p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.date-inputs {
+    display: flex;
+    padding-right: 5rem;
+}
+
+.text-inputs .input-style {
+    padding: .5rem;
+    background-color: #F7F9FB;
+    border: 1px solid #F7F9FB;
+}
+
+.date-inputs .date {
+    width: 50%;
+    padding: .5rem;
+    text-align: center;
+    background-color: #F7F9FB;
+    border: 1px solid #F7F9FB;
+    margin-right: 1rem;
+}

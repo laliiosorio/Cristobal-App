@@ -1,0 +1,47 @@
+.becas-list {
+    padding: 30px;
+}
+
+.becas-card {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(76, 84, 200, 0.1);
+    border-radius: 6px;
+    padding: 24px;
+    margin: 30px 10px;
+}
+
+.becas-card h6 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F2F32;
+    margin-bottom: 1.5rem;
+}
+
+.becas-card .apto {
+    text-align: center;
+    padding: 4px 12px;
+    background: rgba(21, 160, 32, 0.2);
+    border-radius: 4px;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #15A020;
+    width: 30%;
+}
+
+.becas-card .no-apto {
+    text-align: center;
+    padding: 4px 12px;
+    background: rgba(254, 151, 5, 0.2);
+    border-radius: 4px;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #FE9705;
+    width: 30%;
+}

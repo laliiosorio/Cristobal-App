@@ -1,0 +1,147 @@
+/* Header Home */
+
+.header-home {
+    padding: 30px;
+}
+
+.p-hero {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 22px 0 28px 0;
+}
+
+/* About Home */
+
+.about-home {
+    padding: 30px;
+    margin: 48px 0 30px 0;
+}
+
+.steps {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.steps img {
+    width: 50px;
+    height: 50px;
+}
+
+.steps-info {
+    padding-left: 20px;
+}
+
+.steps-info h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #2F2F32;
+    margin-bottom: 5px;
+}
+
+.steps-info p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+/* Opinions home */
+
+.opinion-home {
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+.opinion-home h5 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.comment {
+    padding: 24px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(76, 84, 200, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 30px rgb(76 84 200 / 10%);
+    border-radius: 20px;
+}
+
+.datos-comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.person-data {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.person-data h6 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    margin: 0;
+}
+
+.person-data p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #3D41B1;
+    margin: 0;
+}
+
+/* Brand Home */
+
+.brand-home {
+    padding: 30px;
+    text-align: center;
+}
+
+.brands-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.brands-box img {
+    filter: grayscale();
+    height: 2.5rem;
+    margin: 1.8em;
+}
+
+/* Bottton Home */
+
+.container, .container-fluid {
+    padding: 0!important;
+}
+
+.bottom-box {
+    padding: 0;
+    background-color: #4F6DE2;
+}
+
+.bottom-data {
+    padding: 30px;
+}
+
+.bottom-data img {
+    height: 2rem;
+    margin-bottom: 10px;
+}
+
+.bottom-data p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+}
